@@ -104,11 +104,13 @@ img {
 
 .home-image img {
     width: 100%;
-    height: auto;
+    height: 100%; /* Ensure height matches width for a perfect circle */
     border-radius: 50%;
     object-fit: cover;
     animation: floatImage 4s ease-in-out infinite;
 }
+
+
 
 @keyframes floatImage {
     0% {
@@ -163,7 +165,10 @@ img {
     letter-spacing: .1rem;
     font-weight: 600;
     transition: .5s ease;
+    margin: .8rem; /* Adjust as needed */
 }
+
+
 
 .btn:hover {
     box-shadow: none;
